@@ -18,11 +18,9 @@
         </activity>
 
         <activity
-            android:name=".activity.partone.PartOneActivity"/>
+            android:name=".activity.PartOneActivity"/>
         <activity
-            android:name=".activity.parttwo.PartTwoActivity"/>
-        <activity
-            android:name=".activity.partthree.PartThreeActivity"/>
+            android:name=".activity.PartThreeActivity"/>
 
 
     </application>

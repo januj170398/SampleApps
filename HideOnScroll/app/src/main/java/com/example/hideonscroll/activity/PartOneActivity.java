@@ -1,4 +1,4 @@
-package com.example.hideonscroll.activity.partone;
+package com.example.hideonscroll.activity;
 
 import android.os.Bundle;
 import android.view.animation.AccelerateInterpolator;
@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hideonscroll.R;
-import com.example.hideonscroll.adapter.partone.RecyclerAdapter;
-import com.example.hideonscroll.listener.partone.HidingScrollListener;
+import com.example.hideonscroll.adapter.RecyclerAdapter;
+import com.example.hideonscroll.utils.HidingScrollListener;
 
 import java.util.ArrayList;
 import java.util.List;

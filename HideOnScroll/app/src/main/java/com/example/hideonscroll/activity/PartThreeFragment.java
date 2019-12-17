@@ -1,4 +1,4 @@
-package com.example.hideonscroll.fragment;
+package com.example.hideonscroll.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hideonscroll.R;
-import com.example.hideonscroll.adapter.parttwo.RecyclerAdapter;
+import com.example.hideonscroll.adapter.RecyclerAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 

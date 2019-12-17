@@ -1,4 +1,4 @@
-package com.example.hideonscroll;
+package com.example.hideonscroll.utils;
 
 import android.content.Context;
 import android.util.AttributeSet;

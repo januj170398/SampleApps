@@ -1,4 +1,4 @@
-package com.example.hideonscroll.activity.partthree;
+package com.example.hideonscroll.activity;
 
 import android.os.Bundle;
 
@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.hideonscroll.R;
-import com.example.hideonscroll.fragment.PartThreeFragment;
 import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;

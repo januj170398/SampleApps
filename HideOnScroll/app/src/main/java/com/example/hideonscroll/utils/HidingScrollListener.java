@@ -1,4 +1,4 @@
-package com.example.hideonscroll.listener.partone;
+package com.example.hideonscroll.utils;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;

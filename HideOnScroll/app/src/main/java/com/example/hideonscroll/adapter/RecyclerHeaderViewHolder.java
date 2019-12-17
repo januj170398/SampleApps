@@ -1,4 +1,4 @@
-package com.example.hideonscroll.adapter.partone.viewholder;
+package com.example.hideonscroll.adapter;
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;

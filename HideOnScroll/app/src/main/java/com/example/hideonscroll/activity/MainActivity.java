@@ -9,13 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.hideonscroll.R;
-import com.example.hideonscroll.activity.partone.PartOneActivity;
-import com.example.hideonscroll.activity.partthree.PartThreeActivity;
-import com.example.hideonscroll.activity.parttwo.PartTwoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button partOneButton;
-    private Button partTwoButton;
     private Button partThreeButton;
 
     @Override
@@ -26,11 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initToolbar();
 
         partOneButton = (Button) findViewById(R.id.partOneButton);
-        partTwoButton = (Button) findViewById(R.id.partTwoButton);
         partThreeButton = (Button) findViewById(R.id.partThreeButton);
 
         partOneButton.setOnClickListener(this);
-        partTwoButton.setOnClickListener(this);
         partThreeButton.setOnClickListener(this);
 
 
@@ -46,8 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if(v.equals(partOneButton)) {
             startActivity(PartOneActivity.class);
-        } else if(v.equals(partTwoButton)) {
-            startActivity(PartTwoActivity.class);
         } else {
             startActivity(PartThreeActivity.class);
         }

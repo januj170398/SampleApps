@@ -1,7 +1,9 @@
-package com.example.hideonscroll;
+package com.example.hideonscroll.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+
+import com.example.hideonscroll.R;
 
 public class Utils {
 

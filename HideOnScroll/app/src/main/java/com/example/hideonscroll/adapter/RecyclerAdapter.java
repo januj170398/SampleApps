@@ -1,4 +1,4 @@
-package com.example.hideonscroll.adapter.partone;
+package com.example.hideonscroll.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.hideonscroll.R;
-import com.example.hideonscroll.adapter.partone.viewholder.RecyclerHeaderViewHolder;
-import com.example.hideonscroll.adapter.partone.viewholder.RecyclerItemViewHolder;
+import com.example.hideonscroll.adapter.RecyclerHeaderViewHolder;
+import com.example.hideonscroll.adapter.RecyclerItemViewHolder;
 
 import java.util.List;
 
