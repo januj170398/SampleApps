@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 /**
  * @author Nikita Olifer
  */
-public class DemoRecyclerViewAdapter extends RecyclerView.Adapter<DemoRecyclerViewAdapter.ViewHolder> {
+public class PartScreenAdapter extends RecyclerView.Adapter<PartScreenAdapter.ViewHolder> {
 
     private int count;
     private final int screenWidth;
 
-    DemoRecyclerViewAdapter(int count, int screenWidth) {
+    PartScreenAdapter(int count, int screenWidth) {
         this.count = count;
         this.screenWidth = screenWidth;
     }
@@ -28,8 +28,8 @@ public class DemoRecyclerViewAdapter extends RecyclerView.Adapter<DemoRecyclerVi
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.demo_page, parent, false);
-        view.getLayoutParams().width = screenWidth / 3;
+                .inflate(R.layout.part_screen_page, parent, false);
+       // view.getLayoutParams().width = screenWidth / 2;
         return new ViewHolder(view);
     }
 

@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         int screenWidth = getScreenWidth();
 
         // Setup ViewPager with indicator
-        ViewPager pager = findViewById(R.id.pager);
-        DemoPagerAdapter pagerAdapter = new DemoPagerAdapter(8);
+        ViewPager pager = findViewById(R.id.pager_full_screen);
+        FullScreenAdapter pagerAdapter = new FullScreenAdapter(8);
         pager.setAdapter(pagerAdapter);
 
         ScrollingPagerIndicator pagerIndicator = findViewById(R.id.pager_indicator);
@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Setup RecyclerView with indicator
         // One page will occupy 1/3 of screen width
-        RecyclerView recyclerView = findViewById(R.id.recycler);
+        RecyclerView recyclerView = findViewById(R.id.recycler_part_pager);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        DemoRecyclerViewAdapter recyclerAdapter = new DemoRecyclerViewAdapter(8, screenWidth);
+
+        PartScreenAdapter recyclerAdapter = new PartScreenAdapter(8, screenWidth);
         recyclerView.setAdapter(recyclerAdapter);
 
         recyclerView.setPadding(screenWidth / 3, 0, screenWidth / 3, 0);

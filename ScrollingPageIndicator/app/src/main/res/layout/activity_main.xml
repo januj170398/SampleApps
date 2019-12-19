@@ -30,7 +30,7 @@
     app:spi_dotSelectedColor="@color/dotHighlight" />
 
 <androidx.viewpager.widget.ViewPager
-    android:id="@+id/pager"
+    android:id="@+id/pager_full_screen"
     android:layout_width="match_parent"
     android:layout_height="@dimen/pager_height"
     app:layout_constraintTop_toBottomOf="@id/pager_indicator" />
@@ -41,7 +41,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:text="@string/title_recycler"
-    app:layout_constraintTop_toBottomOf="@id/pager" />
+    app:layout_constraintTop_toBottomOf="@id/pager_full_screen" />
 
 <com.example.scrollingpageindicator.scrollingpagerindicator.ScrollingPagerIndicator
     android:id="@+id/recycler_indicator"
@@ -55,7 +55,7 @@
     app:spi_dotSelectedColor="@color/dotHighlight" />
 
 <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recycler"
+    android:id="@+id/recycler_part_pager"
     android:layout_width="match_parent"
     android:layout_height="@dimen/pager_height"
     android:clipToPadding="false"

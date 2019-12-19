@@ -11,10 +11,10 @@ import androidx.viewpager.widget.PagerAdapter;
 /**
  * @author Nikita Olifer
  */
-class DemoPagerAdapter extends PagerAdapter {
+class FullScreenAdapter extends PagerAdapter {
     private int pageCount;
 
-    DemoPagerAdapter(int pageCount) {
+    FullScreenAdapter(int pageCount) {
         this.pageCount = pageCount;
     }
 
@@ -27,7 +27,7 @@ class DemoPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup collection, int position) {
         ViewGroup layout = (ViewGroup) LayoutInflater.from(collection.getContext())
-                .inflate(R.layout.demo_page, collection, false);
+                .inflate(R.layout.full_screen_page, collection, false);
         ImageView label = layout.findViewById(R.id.demo_page_label);
        // label.setText(String.valueOf(position));
         collection.addView(layout);
