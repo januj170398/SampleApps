@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         PartScreenAdapter recyclerAdapter = new PartScreenAdapter(8, screenWidth);
         recyclerView.setAdapter(recyclerAdapter);
 
-        recyclerView.setPadding(screenWidth / 3, 0, screenWidth / 3, 0);
+        //recyclerView.setPadding(screenWidth / 3, 0, screenWidth / 3, 0);
 
         ScrollingPagerIndicator recyclerIndicator = findViewById(R.id.recycler_indicator);
         // Consider page in the middle current

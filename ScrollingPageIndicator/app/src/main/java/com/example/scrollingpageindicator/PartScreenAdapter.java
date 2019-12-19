@@ -29,7 +29,7 @@ public class PartScreenAdapter extends RecyclerView.Adapter<PartScreenAdapter.Vi
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.part_screen_page, parent, false);
-       // view.getLayoutParams().width = screenWidth / 2;
+        view.getLayoutParams().width = screenWidth / 2;
         return new ViewHolder(view);
     }
 
