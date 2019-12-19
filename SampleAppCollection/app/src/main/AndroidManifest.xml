@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sampleappcollection">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.sdwfqin.sample.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 指定屏幕横屏显示 -->
+        <activity
+            android:name=".gridview.GridViewActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".bottomsheet.BottomSheetActivity" />
+        <activity android:name=".broadcast.BroadcastActivity" />
+        <activity android:name=".activitytransition.T1Activity" />
+        <activity android:name=".activitytransition.T2Activity" />
+        <activity android:name=".sqlitetable.SqliteTableActivity" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".recyclerview.RecyclerActivity" />
+        <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".retrofit.activity.RetrofitActivity" />
+        <activity android:name=".retrofit.activity.RetrofitGetActivity" />
+        <activity android:name=".retrofit.activity.RetrofitPostActivity" />
+        <activity android:name=".popupwindow.PopupMainActivity" />
+        <activity android:name=".popupwindow.PopDropDownBgActivity" />
+        <activity android:name=".popupwindow.PopshowAtLocationActivity" />
+        <activity android:name=".popupwindow.PopupAnimActivity" />
+        <activity android:name=".popupwindow.PopupShowAsDropDownActivity" />
+        <activity android:name=".popupwindow.LongShowPopupActivity" />
+        <activity android:name=".view.ViewActivity" />
+        <activity android:name=".view.viewposition.ViewPositionActivity" />
+        <activity android:name=".view.motionslop.MeTsActivity" />
+        <activity android:name=".view.gesturedetector.GestureDetectorActivity" />
+        <activity android:name=".view.scroller.ScrollerActivity" />
+        <activity android:name=".view.viewevent.ViewEventActivity" />
+        <activity android:name=".view.bottomzoom.BottomZoomActivity" />
+        <activity android:name=".view.descircle.DesCircleActivity" />
+        <activity android:name=".view.courtesycard.CourtesyCardActivity" />
+        <activity android:name=".view.paypwdinput.PayPwdInputActivity" />
+        <activity android:name=".eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.eventbussticky.EventBusStickyActivity" />
+        <activity android:name=".spannablestring.SpannableActivity" />
+        <activity android:name=".canvas.CanvasActivity" />
+        <activity android:name=".asynctask.AsyncTaskActivity" />
+        <activity android:name=".service.ServiceActivity" />
+        <activity android:name=".rxjava.RxJavaMainActivity" />
+        <activity android:name=".rxjava.RxJavaActivity" />
+        <activity android:name=".rxjava.RxJavaSchedulersActivity" />
+        <activity android:name=".rxjava.RxJavaMapActivity" />
+        <activity android:name=".rxjava.RxJavaZipActivity" />
+        <activity android:name=".rxjava.RxJavaFlowableActivity" />
+        <activity android:name=".rxjava.RxJavaComposeActivity" />
+
+        <service android:name=".service.service.NotInteractiveService" />
+        <service android:name=".service.service.InteractiveService" />
+        <service android:name=".service.service.StageService" />
+        <service android:name=".service.service.MyIntentService" />
+        <!-- 普通广播 -->
+        <receiver android:name=".broadcast.broadcast.OrdinaryBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.sdwfqin.broadcastdemo" />
+            </intent-filter>
+        </receiver>
+        <!-- 有序广播 -->
+        <receiver android:name=".broadcast.broadcast.OrderBroadcastReceiver$HighPriority">
+            <intent-filter android:priority="300">
+                <action android:name="com.sdwfqin.broadcastdemo2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.broadcast.OrderBroadcastReceiver$MidPriority">
+            <intent-filter android:priority="200">
+                <action android:name="com.sdwfqin.broadcastdemo2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.broadcast.OrderBroadcastReceiver$LowPriority">
+            <intent-filter android:priority="100">
+                <action android:name="com.sdwfqin.broadcastdemo2" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".view.surface.SurfaceActivity" />
+        <activity android:name=".view.surfacepalette.SurfacePaletteActivity" />
+        <activity android:name=".recyclerview.recycler.RecyclerActivity" />
+        <activity android:name=".recyclerview.vlayout.VLayoutActivity" />
+        <activity android:name=".recyclerview.doublelistlinkage.DoublelistlinkageActivity" />
+        <activity android:name=".view.rippleanimation.RippleAnimationActivity" />
+        <activity android:name=".picture.PictureActivity" />
+
+        <activity android:name=".view.delbtn.DeleteButtonActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".biometrics.BiometricsMainActivity" />
+        <activity android:name=".biometrics.fingerprint.FingerprintActivity" />
+
+
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+
+
+    </application>
+
+</manifest>

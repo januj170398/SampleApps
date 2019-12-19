@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list">
+        <item>View</item>
+        <item>MpAndroidChart</item>
+        <item>Activity跳转动画</item>
+        <item>BottomSheet</item>
+        <item>PopupWindow</item>
+        <item>Recycler</item>
+        <item>SQLite数据库和动态表格</item>
+        <item>Notifications通知</item>
+        <item>GridView</item>
+        <item>Handler</item>
+        <item>Dagger2</item>
+        <item>Retrofit</item>
+        <item>Broadcast广播</item>
+        <item>SpannableString富文本</item>
+        <item>Canvas</item>
+        <item>AsyncTask</item>
+        <item>Service服务</item>
+        <item>RxJava</item>
+    </string-array>
+
+    <string-array name="anim_type">
+        <item>淡入淡出效果</item>
+        <item>放大淡出效果</item>
+        <item>转动淡出效果1</item>
+        <item>转动淡出效果2</item>
+        <item>左上角展开淡出效果</item>
+        <item>压缩变小淡出效果</item>
+        <item>右往左推出效果</item>
+        <item>下往上推出效果</item>
+        <item>左右交错效果</item>
+        <item>放大淡出效果</item>
+        <item>缩小效果</item>
+        <item>上下交错效果</item>
+    </string-array>
+
+    <string-array name="spinner">
+        <item>查询小车当前速度</item>
+        <item>设置小车动作</item>
+        <item>小车账户充值</item>
+        <item>查询小车账户余额</item>
+        <item>查询红绿灯的配置信息</item>
+        <item>停车场费率设置</item>
+        <item>查询当前停车场费率信息</item>
+        <item>查询当前空闲车位</item>
+        <item>查询所有传感器的当前值</item>
+        <item>查询光照传感器阀值</item>
+        <item>站台信息查询</item>
+        <item>查询道路状态</item>
+    </string-array>
+
+    <string-array name="sensor">
+        <item name="co2">CO2</item>
+        <item name="light">光照</item>
+        <item name="air_h">空气湿度</item>
+        <item name="air_t">空气温度</item>
+        <item name="soil_h">土壤湿度</item>
+        <item name="soil_t">土壤温度</item>
+    </string-array>
+
+    <string-array name="pill">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+</resources>

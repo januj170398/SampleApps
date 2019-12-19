@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sdwfqin.sample.view.paypwdinput.PayPwdInputActivity">
+
+    <com.sdwfqin.sample.view.paypwdinput.PayPwdInputView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        app:maxCount="6"
+        app:psdType="weChat"
+        app:divideLineWidth="1dp"
+        app:rectAngle="0dp" />
+
+    <com.sdwfqin.sample.view.paypwdinput.PayPwdInputView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        app:maxCount="6"
+        app:psdType="bottomLine" />
+
+</LinearLayout>

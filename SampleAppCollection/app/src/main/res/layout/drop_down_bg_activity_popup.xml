@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#88000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pop_bg"
+        android:orientation="vertical"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/pop_computer"
+            style="@style/pop_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算机" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_line" />
+
+        <TextView
+            android:id="@+id/pop_financial"
+            style="@style/pop_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金融" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_line" />
+
+        <TextView
+            android:id="@+id/pop_manage"
+            style="@style/pop_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+</RelativeLayout>
