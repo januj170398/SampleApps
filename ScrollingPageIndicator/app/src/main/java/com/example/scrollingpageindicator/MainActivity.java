@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Setup ViewPager with indicator
         ViewPager pager = findViewById(R.id.pager_full_screen);
-        FullScreenAdapter pagerAdapter = new FullScreenAdapter(8);
+        FullScreenBannerAdapter pagerAdapter = new FullScreenBannerAdapter(8);
         pager.setAdapter(pagerAdapter);
 
         ScrollingPagerIndicator pagerIndicator = findViewById(R.id.pager_indicator);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycler_part_pager);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        PartScreenAdapter recyclerAdapter = new PartScreenAdapter(8, screenWidth);
+        PartScreenBannerAdapter recyclerAdapter = new PartScreenBannerAdapter(8, screenWidth);
         recyclerView.setAdapter(recyclerAdapter);
 
         //recyclerView.setPadding(screenWidth / 3, 0, screenWidth / 3, 0);

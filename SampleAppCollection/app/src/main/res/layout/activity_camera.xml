@@ -15,14 +15,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="拍照"/>
+            android:text="Take a picture"/>
 
         <Button
             android:id="@+id/camera_cc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="相册"/>
+            android:text="Photo album"/>
     </LinearLayout>
 
     <ImageView

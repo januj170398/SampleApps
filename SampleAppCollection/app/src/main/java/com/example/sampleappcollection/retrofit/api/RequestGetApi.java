@@ -1,6 +1,7 @@
 package com.example.sampleappcollection.retrofit.api;
 
-import com.sdwfqin.sample.retrofit.model.RequestModel;
+
+import com.example.sampleappcollection.retrofit.model.RequestModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

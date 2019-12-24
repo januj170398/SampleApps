@@ -2,9 +2,10 @@ package com.example.sampleappcollection.view.viewposition;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.blankj.utilcode.util.ConvertUtils;
 import com.blankj.utilcode.util.LogUtils;

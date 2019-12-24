@@ -2,9 +2,10 @@ package com.example.sampleappcollection.view.descircle;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-import com.sdwfqin.sample.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

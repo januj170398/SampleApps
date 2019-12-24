@@ -1,10 +1,11 @@
 package com.example.sampleappcollection.view.surfacepalette;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.sdwfqin.sample.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -3,14 +3,16 @@ package com.example.sampleappcollection.retrofit.activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.R;
-import com.sdwfqin.sample.retrofit.api.RequestGetApi;
-import com.sdwfqin.sample.retrofit.model.RequestModel;
+import com.example.sampleappcollection.R;
+import com.example.sampleappcollection.retrofit.api.RequestGetApi;
+import com.example.sampleappcollection.retrofit.model.RequestModel;
+
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;

@@ -1,6 +1,6 @@
 package com.example.sampleappcollection.retrofit.api;
 
-import com.sdwfqin.sample.retrofit.model.RequestModel;
+import com.example.sampleappcollection.retrofit.model.RequestModel;
 
 import io.reactivex.Observable;
 import retrofit2.http.Field;

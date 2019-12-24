@@ -1,9 +1,10 @@
 package com.example.sampleappcollection.view.scroller;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-import com.sdwfqin.sample.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
 
 /**
  * 描述：View滑动

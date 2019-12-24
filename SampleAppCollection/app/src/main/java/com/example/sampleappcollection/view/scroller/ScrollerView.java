@@ -1,10 +1,11 @@
 package com.example.sampleappcollection.view.scroller;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.Scroller;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.blankj.utilcode.util.LogUtils;
 

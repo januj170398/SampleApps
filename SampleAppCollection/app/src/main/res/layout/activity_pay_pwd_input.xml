@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.view.paypwdinput.PayPwdInputActivity">
+    tools:context=".view.paypwdinput.PayPwdInputActivity">
 
-    <com.sdwfqin.sample.view.paypwdinput.PayPwdInputView
+    <com.example.sampleappcollection.view.paypwdinput.PayPwdInputView
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:divideLineWidth="1dp"
         app:rectAngle="0dp" />
 
-    <com.sdwfqin.sample.view.paypwdinput.PayPwdInputView
+    <com.example.sampleappcollection.view.paypwdinput.PayPwdInputView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

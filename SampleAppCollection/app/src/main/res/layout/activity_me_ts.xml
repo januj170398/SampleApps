@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.view.motionslop.MeTsActivity">
+    tools:context=".view.motionslop.MeTsActivity">
 
-    <com.sdwfqin.sample.view.motionslop.MeTsView
+    <com.example.sampleappcollection.view.motionslop.MeTsView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

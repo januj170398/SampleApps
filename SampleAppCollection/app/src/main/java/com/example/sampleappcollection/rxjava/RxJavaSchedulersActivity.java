@@ -1,10 +1,11 @@
 package com.example.sampleappcollection.rxjava;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.R;
+import com.example.sampleappcollection.R;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

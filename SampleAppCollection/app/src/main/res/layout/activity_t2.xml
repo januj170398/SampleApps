@@ -9,12 +9,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sdwfqin.sample.activitytransition.T2Activity">
+    tools:context=".activitytransition.T2Activity">
 
     <Button
         android:onClick="exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="返回"/>
+        android:text="return"/>
 
 </RelativeLayout>

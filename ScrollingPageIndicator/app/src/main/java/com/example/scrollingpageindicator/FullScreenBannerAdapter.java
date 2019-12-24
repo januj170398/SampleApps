@@ -11,10 +11,10 @@ import androidx.viewpager.widget.PagerAdapter;
 /**
  * @author Nikita Olifer
  */
-class FullScreenAdapter extends PagerAdapter {
+class FullScreenBannerAdapter extends PagerAdapter {
     private int pageCount;
 
-    FullScreenAdapter(int pageCount) {
+    FullScreenBannerAdapter(int pageCount) {
         this.pageCount = pageCount;
     }
 

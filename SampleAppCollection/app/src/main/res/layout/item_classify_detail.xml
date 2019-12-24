@@ -21,7 +21,7 @@
         android:layout_marginTop="@dimen/dp_5"
         android:gravity="center"
         android:maxLines="1"
-        android:text="分类名称"
+        android:text="Category Name"
         android:textColor="@android:color/black"
         android:textSize="@dimen/sp_14"/>
 </LinearLayout>

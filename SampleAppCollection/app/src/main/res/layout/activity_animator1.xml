@@ -10,6 +10,6 @@
         android:id="@+id/animator1_btn"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="点我变大" />
+        android:text="Click me to grow" />
 
 </LinearLayout>

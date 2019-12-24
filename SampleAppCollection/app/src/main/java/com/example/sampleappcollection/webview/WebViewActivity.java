@@ -2,7 +2,6 @@ package com.example.sampleappcollection.webview;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
@@ -10,7 +9,10 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.sdwfqin.sample.R;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

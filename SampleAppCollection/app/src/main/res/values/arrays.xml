@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="list">
-        <item>View</item>
-        <item>MpAndroidChart</item>
-        <item>Activity跳转动画</item>
-        <item>BottomSheet</item>
-        <item>PopupWindow</item>
-        <item>Recycler</item>
-        <item>SQLite数据库和动态表格</item>
-        <item>Notifications通知</item>
-        <item>GridView</item>
-        <item>Handler</item>
-        <item>Dagger2</item>
-        <item>Retrofit</item>
-        <item>Broadcast广播</item>
-        <item>SpannableString富文本</item>
-        <item>Canvas</item>
-        <item>AsyncTask</item>
-        <item>Service服务</item>
-        <item>RxJava</item>
+        <item> View </ item>
+        <item> MpAndroidChart </ item>
+        <item> Activity Jump Animation </ item>
+        <item> BottomSheet </ item>
+        <item> PopupWindow </ item>
+        <item> Recycler </ item>
+        <item> SQLite database and dynamic tables </ item>
+        <item> Notifications </ item>
+        <item> GridView </ item>
+        <item> Handler </ item>
+        <item> Dagger2 </ item>
+        <item> Retrofit </ item>
+        <item> Broadcast </ item>
+        <item> SpannableString rich text </ item>
+        <item> Canvas </ item>
+        <item> AsyncTask </ item>
+        <item> Service </ item>
+        <item> RxJava </ item>
     </string-array>
 
     <string-array name="anim_type">
-        <item>淡入淡出效果</item>
-        <item>放大淡出效果</item>
-        <item>转动淡出效果1</item>
-        <item>转动淡出效果2</item>
-        <item>左上角展开淡出效果</item>
-        <item>压缩变小淡出效果</item>
-        <item>右往左推出效果</item>
-        <item>下往上推出效果</item>
-        <item>左右交错效果</item>
-        <item>放大淡出效果</item>
-        <item>缩小效果</item>
-        <item>上下交错效果</item>
+        <item>Fade in and fade out effect</item>
+        <item>Zoom out effect</item>
+        <item>Rotating Fade Effect 1</item>
+        <item>Rotating Fade Effect 2</item>
+        <item>Expand fade effect in upper left corner</item>
+        <item>Compression becomes smaller and fade out effect</item>
+        <item>Roll out effect from right to left</item>
+        <item> Pushing effect from bottom to top </ item>
+        <item> Left and right interlaced effect </ item>
+        <item> Fade out effect </ item>
+        <item> Shrink effect </ item>
+        <item> Interlaced effect </ item>
     </string-array>
 
     <string-array name="spinner">
-        <item>查询小车当前速度</item>
-        <item>设置小车动作</item>
-        <item>小车账户充值</item>
-        <item>查询小车账户余额</item>
-        <item>查询红绿灯的配置信息</item>
-        <item>停车场费率设置</item>
-        <item>查询当前停车场费率信息</item>
-        <item>查询当前空闲车位</item>
-        <item>查询所有传感器的当前值</item>
-        <item>查询光照传感器阀值</item>
-        <item>站台信息查询</item>
-        <item>查询道路状态</item>
+        <item> Query the current speed of the car </ item>
+        <item> Set the car action </ item>
+        <item> Top-up of your car account </ item>
+        <item> Query the balance of the car account </ item>
+        <item> Query configuration information for traffic lights </ item>
+        <item> Parking rate setting </ item>
+        <item> Query current parking rate information </ item>
+        <item> Query the current free parking space </ item>
+        <item> Query the current values ​​of all sensors </ item>
+        <item> Query the light sensor threshold </ item>
+        <item> Inquiry for station information </ item>
+        <item> Query road status </ item>
     </string-array>
 
     <string-array name="sensor">
-        <item name="co2">CO2</item>
-        <item name="light">光照</item>
-        <item name="air_h">空气湿度</item>
-        <item name="air_t">空气温度</item>
-        <item name="soil_h">土壤湿度</item>
-        <item name="soil_t">土壤温度</item>
+        <item name = "co2"> CO2 </ item>
+        <item name = "light"> Lighting </ item>
+        <item name = "air_h"> Air humidity </ item>
+        <item name = "air_t"> air temperature </ item>
+        <item name = "soil_h"> Soil moisture </ item>
+        <item name = "soil_t"> Soil temperature </ item>
     </string-array>
 
     <string-array name="pill">

@@ -1,12 +1,14 @@
 package com.example.sampleappcollection.view.delbtn;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.AppCompatTextView;
+
 import android.text.Editable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.EditText;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import java.util.Timer;
 import java.util.TimerTask;

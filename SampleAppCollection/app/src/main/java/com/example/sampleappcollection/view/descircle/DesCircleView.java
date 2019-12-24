@@ -5,11 +5,12 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.sdwfqin.sample.R;
+import androidx.annotation.Nullable;
+
+import com.example.sampleappcollection.R;
 
 /**
  * 描述：自定义View1圆

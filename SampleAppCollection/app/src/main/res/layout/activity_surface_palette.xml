@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sdwfqin.sample.view.surfacepalette.SurfacePaletteActivity">
+    tools:context=".view.surfacepalette.SurfacePaletteActivity">
 
-    <com.sdwfqin.sample.view.surfacepalette.PaletteSurfaceView
+    <com.example.sampleappcollection.view.surfacepalette.PaletteSurfaceView
         android:id="@+id/surface"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -20,8 +20,8 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:gravity="center"
-        android:text="保存图片到本地"
+        android:text="Save picture to local"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/surface" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

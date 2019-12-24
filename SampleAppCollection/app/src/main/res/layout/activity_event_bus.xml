@@ -4,19 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.eventbus.eventbus.EventBusActivity">
+    tools:context=".eventbus.eventbus.EventBusActivity">
 
     <Button
         android:id="@+id/btn_event1_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送消息" />
+        android:text="send messages" />
 
     <Button
         android:id="@+id/btn_event1_send2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送对象" />
+        android:text="send the object" />
 
     <TextView
         android:id="@+id/tv_event1_msg"

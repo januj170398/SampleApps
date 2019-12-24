@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 /**
  * @author Nikita Olifer
  */
-public class PartScreenAdapter extends RecyclerView.Adapter<PartScreenAdapter.ViewHolder> {
+public class PartScreenBannerAdapter extends RecyclerView.Adapter<PartScreenBannerAdapter.ViewHolder> {
 
     private int count;
     private final int screenWidth;
 
-    PartScreenAdapter(int count, int screenWidth) {
+    PartScreenBannerAdapter(int count, int screenWidth) {
         this.count = count;
         this.screenWidth = screenWidth;
     }

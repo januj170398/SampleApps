@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 描述：Recycler列表
+ * Description: Recycler list
  *
  * @author zhangqin
  * @date 2017/11/8
@@ -26,7 +26,7 @@ public class RecyclerActivity extends AppCompatActivity {
     @BindView(R.id.list)
     ListView mRecyclerList;
 
-    private String[] mTitle = new String[]{"基本使用", "VLayout", "双列表联动"};
+    private String[] mTitle = new String[]{"Basic use", "VLayout", "Double list linkage\n"};
     private Class[] mClasses = new Class[]{RecyclerActivity.class, VLayoutActivity.class,
             DoublelistlinkageActivity.class};
 

@@ -5,13 +5,12 @@
     android:layout_height="match_parent"
     android:clipChildren="false"
     android:clipToPadding="false"
-    android:padding="16dp">
+    android:padding="5dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:elevation="6dp"
-        tools:targetApi="lollipop">
+        android:elevation="6dp">
 
         <ImageView
             android:id="@+id/demo_page_label"

@@ -3,12 +3,13 @@ package com.example.sampleappcollection.view.bottomzoom;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.blankj.utilcode.util.ConvertUtils;
-import com.sdwfqin.sample.R;
+import com.example.sampleappcollection.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

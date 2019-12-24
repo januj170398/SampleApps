@@ -14,6 +14,7 @@ import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.LayoutHelper;
 import com.alibaba.android.vlayout.VirtualLayoutManager;
 import com.bumptech.glide.Glide;
+import com.example.sampleappcollection.R;
 import com.youth.banner.Banner;
 import com.youth.banner.loader.ImageLoader;
 

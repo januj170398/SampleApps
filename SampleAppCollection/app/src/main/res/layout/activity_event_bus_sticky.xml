@@ -4,19 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.eventbus.eventbussticky.EventBusStickyActivity">
+    tools:context=".eventbus.eventbussticky.EventBusStickyActivity">
 
     <Button
         android:id="@+id/btn_event2_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送粘性事件" />
+        android:text="Sending sticky events" />
 
     <Button
         android:id="@+id/btn_event2_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="删除粘性事件" />
+        android:text="Remove sticky events" />
 
     <TextView
         android:id="@+id/tv_event2_msg"

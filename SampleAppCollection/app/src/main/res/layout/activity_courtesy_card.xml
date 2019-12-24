@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.view.courtesycard.CourtesyCardActivity">
+    tools:context=".view.courtesycard.CourtesyCardActivity">
 
-    <com.sdwfqin.sample.view.courtesycard.CourtesyCardView
+    <com.example.sampleappcollection.view.courtesycard.CourtesyCardView
         android:id="@+id/viewz2_main"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -22,13 +22,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="抽奖券" />
-    </com.sdwfqin.sample.view.courtesycard.CourtesyCardView>
+            android:text="Raffle ticket" />
+    </com.example.sampleappcollection.view.courtesycard.CourtesyCardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="圆的半径" />
+        android:text="Circle radius" />
 
     <SeekBar
         android:id="@+id/viewz2_seek"
@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="圆的间距" />
+        android:text="Space between circles" />
 
     <SeekBar
         android:id="@+id/viewz2_seek2"

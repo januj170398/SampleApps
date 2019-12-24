@@ -6,13 +6,14 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.support.v7.widget.AppCompatEditText;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
+import androidx.appcompat.widget.AppCompatEditText;
+
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.R;
+import com.example.sampleappcollection.R;
 
 /**
  * 描述：验证码

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sdwfqin.sample.view.viewevent.GroupView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.sampleappcollection.view.viewevent.GroupView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sdwfqin.sample.view.viewevent.ViewEventActivity">
+    tools:context=".view.viewevent.ViewEventActivity">
 
-    <com.sdwfqin.sample.view.viewevent.AView
+    <com.example.sampleappcollection.view.viewevent.AView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="#aaa" />
 
-</com.sdwfqin.sample.view.viewevent.GroupView>
+</com.example.sampleappcollection.view.viewevent.GroupView>

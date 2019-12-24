@@ -6,12 +6,13 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.RelativeLayout;
 
-import com.sdwfqin.sample.R;
+import androidx.core.content.ContextCompat;
+
+import com.example.sampleappcollection.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

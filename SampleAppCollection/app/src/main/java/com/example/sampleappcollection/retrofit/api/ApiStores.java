@@ -1,6 +1,6 @@
 package com.example.sampleappcollection.retrofit.api;
 
-import com.sdwfqin.sample.retrofit.model.WeatherModel;
+import com.example.sampleappcollection.retrofit.model.WeatherModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

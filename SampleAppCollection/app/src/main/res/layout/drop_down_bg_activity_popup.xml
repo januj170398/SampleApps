@@ -17,7 +17,7 @@
             style="@style/pop_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="计算机" />
+            android:text="computer" />
 
         <View
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             style="@style/pop_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="金融" />
+            android:text="financial" />
 
         <View
             android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             style="@style/pop_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="管理" />
+            android:text="management" />
 
         <View
             android:layout_width="match_parent"

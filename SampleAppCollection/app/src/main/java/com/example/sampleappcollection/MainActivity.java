@@ -9,8 +9,31 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.sampleappcollection.activitytransition.T1Activity;
+import com.example.sampleappcollection.asynctask.AsyncTaskActivity;
+import com.example.sampleappcollection.biometrics.BiometricsMainActivity;
+import com.example.sampleappcollection.bottomsheet.BottomSheetActivity;
+import com.example.sampleappcollection.broadcast.BroadcastActivity;
+import com.example.sampleappcollection.canvas.CanvasActivity;
+import com.example.sampleappcollection.eventbus.EventBusActivity;
+import com.example.sampleappcollection.gridview.GridViewActivity;
+import com.example.sampleappcollection.handler.HandlerActivity;
+import com.example.sampleappcollection.notification.NotificationActivity;
+import com.example.sampleappcollection.picture.PictureActivity;
+import com.example.sampleappcollection.popupwindow.PopupMainActivity;
+import com.example.sampleappcollection.recyclerview.RecyclerActivity;
+import com.example.sampleappcollection.retrofit.RetrofitActivity;
+import com.example.sampleappcollection.rxjava.RxJavaMainActivity;
+import com.example.sampleappcollection.service.ServiceActivity;
+import com.example.sampleappcollection.spannablestring.SpannableActivity;
+import com.example.sampleappcollection.sqlitetable.SqliteTableActivity;
+import com.example.sampleappcollection.view.ViewActivity;
+import com.example.sampleappcollection.webview.WebViewActivity;
+
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import pub.devrel.easypermissions.EasyPermissions;
 
 public class MainActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
@@ -21,27 +44,29 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     private final int RESULT_CODE_1 = 100;
     private long exitTime = 0;
 
-    private String[] mTitle = new String[]{"View",
+    private String[] mTitle = new String[]
+            {"View",
             "Notification",
-            "Recycler列表",
-            "Activity跳转动画",
+            "Recycler list",
+            "Activity jump animation",
             "BottomSheet",
             "PopupWindow",
-            "SQLite数据库和动态表格",
+            "SQLite database and dynamic tables",
             "GridView",
             "Handler",
             "Retrofit",
-            "Broadcast广播",
-            "SpannableString富文本",
+            "Broadcast",
+            "SpannableString rich text",
             "Canvas",
             "AsyncTask",
-            "Service服务",
+            "Service",
             "RxJava",
             "Eventbus",
-            "WebView交互",
-            "拍照与相册",
-            "生物识别"};
-    private Class[] mClasses = new Class[]{ViewActivity.class,
+            "WebView interaction",
+            "Photo and album",
+            "Biometrics"};
+    private Class[] mClasses = new Class[]
+            {ViewActivity.class,
             NotificationActivity.class,
             RecyclerActivity.class,
             T1Activity.class,
@@ -76,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             initListener();
         } else {
             // 如果用户拒绝权限，第二次打开才会显示提示文字
-            EasyPermissions.requestPermissions(this, "维持App正常运行需要存储权限", RESULT_CODE_1, perms);
+            EasyPermissions.requestPermissions(this, "Store permissions are required to maintain the normal operation of the app", RESULT_CODE_1, perms);
         }
     }
 
@@ -90,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     @Override
     public void onBackPressed() {
         if (System.currentTimeMillis() - exitTime > 2000) {
-            Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Press again to exit the program", Toast.LENGTH_SHORT).show();
             exitTime = System.currentTimeMillis();
         } else {
             super.onBackPressed();
@@ -123,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
      */
     @Override
     public void onPermissionsDenied(int requestCode, List<String> perms) {
-        Toast.makeText(this, "权限", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Authority", Toast.LENGTH_SHORT).show();
         finish();
     }
 }

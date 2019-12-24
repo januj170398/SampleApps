@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:padding="10dp"
-            android:text="菜单"
+            android:text="menu"
             android:textColor="#50484b" />
 
 

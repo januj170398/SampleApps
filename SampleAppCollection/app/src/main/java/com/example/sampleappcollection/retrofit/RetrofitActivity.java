@@ -2,13 +2,14 @@ package com.example.sampleappcollection.retrofit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.sdwfqin.sample.R;
-import com.sdwfqin.sample.retrofit.activity.RetrofitGetActivity;
-import com.sdwfqin.sample.retrofit.activity.RetrofitPostActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
+import com.example.sampleappcollection.retrofit.activity.RetrofitGetActivity;
+import com.example.sampleappcollection.retrofit.activity.RetrofitPostActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,7 +26,7 @@ public class RetrofitActivity extends AppCompatActivity {
     ListView mRetrofitList;
 
     private String[] mTitle = new String[]{"入门例子", "get请求", "post请求+RxJava"};
-    private Class[] mClasses = new Class[]{com.sdwfqin.sample.retrofit.activity.RetrofitActivity.class, RetrofitGetActivity.class,
+    private Class[] mClasses = new Class[]{RetrofitActivity.class, RetrofitGetActivity.class,
             RetrofitPostActivity.class};
 
     @Override

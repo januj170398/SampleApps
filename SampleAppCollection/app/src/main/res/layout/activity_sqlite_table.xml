@@ -10,13 +10,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sdwfqin.sample.sqlitetable.SqliteTableActivity">
+    tools:context=".sqlitetable.SqliteTableActivity">
 
     <Button
         android:id="@+id/btn_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="增加"/>
+        android:text="increase"/>
 
     <TableLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:layout_margin="0.5dp"
                 android:background="#dedcd2"
                 android:gravity="center"
-                android:text="路口"
+                android:text="intersection"
                 android:width="1dp"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
@@ -42,7 +42,7 @@
                 android:layout_margin="0.5dp"
                 android:background="#dedcd2"
                 android:gravity="center"
-                android:text="红灯"
+                android:text="red light"
                 android:width="1dp"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
@@ -51,7 +51,7 @@
                 android:layout_margin="0.5dp"
                 android:background="#dedcd2"
                 android:gravity="center"
-                android:text="绿灯"
+                android:text="Green light"
                 android:width="1dp"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
@@ -60,7 +60,7 @@
                 android:layout_margin="0.5dp"
                 android:background="#dedcd2"
                 android:gravity="center"
-                android:text="黄灯"
+                android:text="Yellow light"
                 android:width="1dp"
                 android:textSize="20sp"
                 android:textStyle="bold"/>

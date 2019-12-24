@@ -18,22 +18,24 @@
     android:text="@string/title_pager"
     app:layout_constraintTop_toTopOf="parent" />
 
-<com.example.scrollingpageindicator.scrollingpagerindicator.ScrollingPagerIndicator
-    android:id="@+id/pager_indicator"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/pager_title"
-    app:spi_dotColor="@color/dotNormal"
-    app:spi_dotSelectedColor="@color/dotHighlight" />
+
 
 <androidx.viewpager.widget.ViewPager
     android:id="@+id/pager_full_screen"
     android:layout_width="match_parent"
     android:layout_height="@dimen/pager_height"
-    app:layout_constraintTop_toBottomOf="@id/pager_indicator" />
+    app:layout_constraintTop_toBottomOf="@id/pager_title" />
+
+    <com.example.scrollingpageindicator.scrollingpagerindicator.ScrollingPagerIndicator
+        android:id="@+id/pager_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pager_full_screen"
+        app:spi_dotColor="@color/dotNormal"
+        app:spi_dotSelectedColor="@color/dotHighlight" />
 
 <TextView
     android:id="@+id/recycler_title"
@@ -41,25 +43,27 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:text="@string/title_recycler"
-    app:layout_constraintTop_toBottomOf="@id/pager_full_screen" />
+    app:layout_constraintTop_toBottomOf="@id/pager_indicator" />
 
-<com.example.scrollingpageindicator.scrollingpagerindicator.ScrollingPagerIndicator
-    android:id="@+id/recycler_indicator"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/recycler_title"
-    app:spi_dotColor="@color/dotNormal"
-    app:spi_dotSelectedColor="@color/dotHighlight" />
+
 
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/recycler_part_pager"
     android:layout_width="match_parent"
     android:layout_height="@dimen/pager_height"
     android:clipToPadding="false"
-    app:layout_constraintTop_toBottomOf="@id/recycler_indicator" />
+    app:layout_constraintTop_toBottomOf="@id/recycler_title" />
+
+    <com.example.scrollingpageindicator.scrollingpagerindicator.ScrollingPagerIndicator
+        android:id="@+id/recycler_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_part_pager"
+        app:spi_dotColor="@color/dotNormal"
+        app:spi_dotSelectedColor="@color/dotHighlight" />
 
 
 

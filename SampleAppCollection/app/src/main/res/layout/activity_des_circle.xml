@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.sdwfqin.sample.view.descircle.DesCircleActivity">
+    tools:context=".view.descircle.DesCircleActivity">
 
-    <com.sdwfqin.sample.view.descircle.DesCircleView
+    <com.example.sampleappcollection.view.descircle.DesCircleView
         android:id="@+id/viewz1"
         android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:padding="30dp"
         app:bg="@color/bar"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

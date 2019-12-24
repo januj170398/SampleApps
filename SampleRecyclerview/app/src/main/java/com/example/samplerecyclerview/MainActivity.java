@@ -27,31 +27,14 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
         mAdapter = new Adapter(movieList);
-
         recyclerView.setHasFixedSize(true);
-
-        // vertical RecyclerView
-        // keep movie_list_row.xml width to `match_parent`
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-
-        // horizontal RecyclerView
-        // keep movie_list_row.xml width to `wrap_content`
-        // RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
-
         recyclerView.setLayoutManager(mLayoutManager);
-
-        // adding inbuilt divider line
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
-
-        // adding custom divider line with padding 16dp
-        // recyclerView.addItemDecoration(new MyDividerItemDecoration(this, LinearLayoutManager.HORIZONTAL, 16));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-
         recyclerView.setAdapter(mAdapter);
 
-        // row click listener
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
@@ -68,9 +51,6 @@ public class MainActivity extends AppCompatActivity {
         prepareMovieData();
     }
 
-    /**
-     * Prepares sample data to provide data set to adapter
-     */
     private void prepareMovieData() {
         Movie movie = new Movie("Mad Max: Fury Road", "Action & Adventure", "2015");
         movieList.add(movie);

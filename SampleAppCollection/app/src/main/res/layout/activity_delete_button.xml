@@ -8,13 +8,13 @@
     tools:context=".view.delbtn.DeleteButtonActivity">
 
 
-    <com.sdwfqin.sample.view.delbtn.DeleteButtonView
+    <com.example.sampleappcollection.view.delbtn.DeleteButtonView
         android:id="@+id/btn_del"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:gravity="center"
-        android:text="删除按钮"/>
+        android:text="Delete button"/>
 
     <EditText
         android:id="@+id/edit"

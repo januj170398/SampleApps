@@ -35,6 +35,7 @@ public class PartThreeActivity extends AppCompatActivity {
     }
 
     private void initViewPagerAndTabs() {
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(PartThreeFragment.createInstance(20), getString(R.string.tab_1));

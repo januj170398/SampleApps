@@ -5,17 +5,18 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.R;
-import com.sdwfqin.sample.service.service.InteractiveService;
-import com.sdwfqin.sample.service.service.MyIntentService;
-import com.sdwfqin.sample.service.service.NotInteractiveService;
-import com.sdwfqin.sample.service.service.StageService;
+import com.example.sampleappcollection.R;
+import com.example.sampleappcollection.service.service.InteractiveService;
+import com.example.sampleappcollection.service.service.MyIntentService;
+import com.example.sampleappcollection.service.service.NotInteractiveService;
+import com.example.sampleappcollection.service.service.StageService;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -19,7 +19,7 @@
         android:id="@+id/async_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="更新progressbar" />
+        android:text="Update progressbar" />
     <Button
         android:id="@+id/async_t"
         android:layout_width="match_parent"

@@ -8,11 +8,12 @@ import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.MainActivity;
-import com.sdwfqin.sample.R;
+import com.example.sampleappcollection.MainActivity;
+import com.example.sampleappcollection.R;
 
 /**
  * 描述：常驻通知栏

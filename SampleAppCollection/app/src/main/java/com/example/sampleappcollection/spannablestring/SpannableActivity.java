@@ -3,7 +3,6 @@ package com.example.sampleappcollection.spannablestring;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -24,7 +23,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.sdwfqin.sample.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sampleappcollection.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

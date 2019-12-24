@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="com.sdwfqin.sample.webview.WebViewActivity"
+    tools:context=".webview.WebViewActivity"
     android:orientation="vertical">
 
     <Button
         android:id="@+id/webview_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="调用JS"/>
+        android:text="Calling JS"/>
 
     <WebView
         android:id="@+id/webview"

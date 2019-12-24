@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sdwfqin.sample.retrofit.activity.RetrofitGetActivity">
+    tools:context=".retrofit.activity.RetrofitGetActivity">
 
     <Button
         android:id="@+id/retrofit3_btn_post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="异步post请求" />
+        android:text="Asynchronous post request" />
 
     <TextView
         android:id="@+id/retrofit3_tv"

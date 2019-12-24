@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="请验证指纹解锁"
+        android:text="Please verify your fingerprint to unlock"
         android:textColor="#000"
         android:textSize="16sp" />
 
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="取消"
+        android:text="cancel"
         android:textColor="#5d7883"
         android:textSize="16sp" />
 

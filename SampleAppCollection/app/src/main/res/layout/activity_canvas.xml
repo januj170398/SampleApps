@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sdwfqin.sample.canvas.CanvasActivity">
+    tools:context=".canvas.CanvasActivity">
 
-    <com.sdwfqin.sample.canvas.CanvasView
+    <com.example.sampleappcollection.canvas.CanvasView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

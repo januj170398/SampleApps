@@ -1,14 +1,15 @@
 package com.example.sampleappcollection.retrofit.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.blankj.utilcode.util.LogUtils;
-import com.sdwfqin.sample.R;
-import com.sdwfqin.sample.retrofit.api.RequestPostApi;
-import com.sdwfqin.sample.retrofit.model.RequestModel;
+import com.example.sampleappcollection.R;
+import com.example.sampleappcollection.retrofit.api.RequestPostApi;
+import com.example.sampleappcollection.retrofit.model.RequestModel;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

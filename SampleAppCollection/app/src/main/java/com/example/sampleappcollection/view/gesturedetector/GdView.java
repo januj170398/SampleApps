@@ -1,11 +1,12 @@
 package com.example.sampleappcollection.view.gesturedetector;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
 
 import com.blankj.utilcode.util.LogUtils;
 
