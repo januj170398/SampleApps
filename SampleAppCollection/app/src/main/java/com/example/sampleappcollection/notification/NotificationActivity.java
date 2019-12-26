@@ -41,7 +41,7 @@ public class NotificationActivity extends AppCompatActivity {
     final String CHANNEL_ID = "channel_id_1";
     final String CHANNEL_NAME = "channel_name_1";
 
-    private String[] mTitle = new String[]{"普通通知", "自定义通知", "进度条"};
+    private String[] mTitle = new String[]{"General notice", "Custom notification", "progress bar"};
     private Map<Integer, NotificationCompat.Builder> mMap;
     private NotificationManager mManager;
 
@@ -86,15 +86,15 @@ public class NotificationActivity extends AppCompatActivity {
      */
     private void initNotification() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            /**
-             * IMPORTANCE_UNSPECIFIED（值为-1）意味着用户没有表达重要性的价值。此值用于保留偏好设置，不应与实际通知关联。
-             * IMPORTANCE_NONE（值为0）不重要的通知：不会在阴影中显示。
-             * IMPORTANCE_MIN（值为1）最低通知重要性：只显示在阴影下，低于折叠。这不应该与Service.startForeground一起使用，因为前台服务应该是用户关心的事情，所以它没有语义意义来将其通知标记为最低重要性。如果您从Android版本O开始执行此操作，系统将显示有关您的应用在后台运行的更高优先级通知。
-             * IMPORTANCE_LOW（值为2）低通知重要性：无处不在，但不侵入视觉。
-             * IMPORTANCE_DEFAULT （值为3）：默认通知重要性：随处显示，产生噪音，但不会在视觉上侵入。
-             * IMPORTANCE_HIGH（值为4）更高的通知重要性：随处显示，造成噪音和窥视。可以使用全屏的Intent。
-             */
-            //只在Android O之上需要渠道
+            /*
+             * IMPORTANCE_UNSPECIFIED (a value of -1) means that the user has no value in expressing importance. This value is used to preserve preferences and should not be associated with actual notifications.
+                    * IMPORTANCE_NONE (value of 0) is not important: it will not be shown in the shadow.
+             * IMPORTANCE_MIN (value 1) Minimum notification importance: only shown in shadow, lower than collapsed. This should not be used with Service.startForeground, because the foreground service should be something that the user cares about, so it has no semantic meaning to mark its notifications as the least important. If you do this from Android version O, a higher priority notification will appear about your app running in the background.
+             * IMPORTANCE_LOW (value 2) Low notification importance: ubiquitous, but not intrusive to vision.
+             * IMPORTANCE_DEFAULT (value 3): default notification importance: display everywhere, generate noise, but not visually intrusive.
+                    * IMPORTANCE_HIGH (value 4) higher notification importance: display everywhere, causing noise and peeping. You can use a full-screen Intent.
+                    */
+                // Only channels are needed on top of Android O
             NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID,
                     CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
             // 配置通知渠道的属性

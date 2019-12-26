@@ -48,8 +48,8 @@ public class SpannableActivity extends AppCompatActivity {
         setContentView(R.layout.activity_spannable);
         ButterKnife.bind(this);
 
-        SpannableString spannableString = new SpannableString("前景色背景色相对大小删除线下划线" +
-                "上标小上标下标粗体斜体显示图片点击超链接");
+        SpannableString spannableString = new SpannableString("Foreground color background color relative size strikethrough underline" +
+                "Superscript Small Superscript Subscript Bold Italic Display Picture Click Hyperlink");
 
         ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(Color.parseColor("#0099EE"));
         BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(Color.parseColor("#AC00FF30"));
@@ -66,7 +66,7 @@ public class SpannableActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                Toast.makeText(SpannableActivity.this, "点击", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SpannableActivity.this, "Click", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -97,10 +97,10 @@ public class SpannableActivity extends AppCompatActivity {
         // 可以点击
         spanString.setText(spannableString);
 
-        SpannableStringBuilder builder = new SpannableStringBuilder("哈哈哈");
+        SpannableStringBuilder builder = new SpannableStringBuilder("Hahaha");
         builder.setSpan(foregroundColorSpan, 0, 3, Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
         builder.append("lalala");
-        // 注意：如果使用toString()方法设置的样式就没有了
+// Note: if you use the toString () method, the style will be gone
         spanBuilder.setText(builder);
     }
 }

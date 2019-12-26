@@ -37,9 +37,9 @@ public class ViewActivity extends AppCompatActivity {
     ListView mViewList;
     private Context mContext;
 
-    private String[] mStrings = new String[]{"View的位置参数", "MotionEvent与TouchSlop", "GestureDetector", "Scroller",
-            "View触摸事件分发", "按钮放大（属性动画）", "自定义View1圆", "自定义View2凹凸边缘", "SurfaceView",
-            "SurfaceView画板", "自定义输入密码", "网易云听歌识曲", "长按删除按钮"};
+    private String[] mStrings = new String[]{"View Position Parameters", "MotionEvent and TouchSlop", "GestureDetector", "Scroller",
+            "View Touch Event Distribution", "Button Zoom (Attribute Animation)", "Custom View1 Circle", "Custom View2 Bump Edge", "SurfaceView",
+            "SurfaceView artboard", "Custom input password", "Netease Cloud Listening to Music", "Long press the delete button"};
     private Class[] mClasses = new Class[]{ViewPositionActivity.class, MeTsActivity.class,
             GestureDetectorActivity.class, ScrollerActivity.class, ViewEventActivity.class,
             BottomZoomActivity.class, DesCircleActivity.class, CourtesyCardActivity.class, SurfaceActivity.class,

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="list">
-        <item> View </ item>
-        <item> MpAndroidChart </ item>
-        <item> Activity Jump Animation </ item>
-        <item> BottomSheet </ item>
-        <item> PopupWindow </ item>
-        <item> Recycler </ item>
-        <item> SQLite database and dynamic tables </ item>
-        <item> Notifications </ item>
-        <item> GridView </ item>
-        <item> Handler </ item>
-        <item> Dagger2 </ item>
-        <item> Retrofit </ item>
-        <item> Broadcast </ item>
-        <item> SpannableString rich text </ item>
-        <item> Canvas </ item>
-        <item> AsyncTask </ item>
-        <item> Service </ item>
-        <item> RxJava </ item>
+        <item> View </item>
+        <item> MpAndroidChart </item>
+        <item> Activity Jump Animation </item>
+        <item> BottomSheet </item>
+        <item> PopupWindow </item>
+        <item> Recycler </item>
+        <item> SQLite database and dynamic tables </item>
+        <item> Notifications </item>
+        <item> GridView </item>
+        <item> Handler </item>
+        <item> Dagger2 </item>
+        <item> Retrofit </item>
+        <item> Broadcast </item>
+        <item> SpannableString rich text </item>
+        <item> Canvas </item>
+        <item> AsyncTask </item>
+        <item> Service </item>
+        <item> RxJava </item>
     </string-array>
 
     <string-array name="anim_type">
@@ -29,35 +29,35 @@
         <item>Expand fade effect in upper left corner</item>
         <item>Compression becomes smaller and fade out effect</item>
         <item>Roll out effect from right to left</item>
-        <item> Pushing effect from bottom to top </ item>
-        <item> Left and right interlaced effect </ item>
-        <item> Fade out effect </ item>
-        <item> Shrink effect </ item>
-        <item> Interlaced effect </ item>
+        <item> Pushing effect from bottom to top </item>
+        <item> Left and right interlaced effect </item>
+        <item> Fade out effect </item>
+        <item> Shrink effect </item>
+        <item> Interlaced effect </item>
     </string-array>
 
     <string-array name="spinner">
-        <item> Query the current speed of the car </ item>
-        <item> Set the car action </ item>
-        <item> Top-up of your car account </ item>
-        <item> Query the balance of the car account </ item>
-        <item> Query configuration information for traffic lights </ item>
-        <item> Parking rate setting </ item>
-        <item> Query current parking rate information </ item>
-        <item> Query the current free parking space </ item>
-        <item> Query the current values ​​of all sensors </ item>
-        <item> Query the light sensor threshold </ item>
-        <item> Inquiry for station information </ item>
-        <item> Query road status </ item>
+        <item> Query the current speed of the car </item>
+        <item> Set the car action </item>
+        <item> Top-up of your car account </item>
+        <item> Query the balance of the car account </item>
+        <item> Query configuration information for traffic lights </item>
+        <item> Parking rate setting </item>
+        <item> Query current parking rate information </item>
+        <item> Query the current free parking space </item>
+        <item> Query the current values ​​of all sensors </item>
+        <item> Query the light sensor threshold </item>
+        <item> Inquiry for station information </item>
+        <item> Query road status </item>
     </string-array>
 
     <string-array name="sensor">
-        <item name = "co2"> CO2 </ item>
-        <item name = "light"> Lighting </ item>
-        <item name = "air_h"> Air humidity </ item>
-        <item name = "air_t"> air temperature </ item>
-        <item name = "soil_h"> Soil moisture </ item>
-        <item name = "soil_t"> Soil temperature </ item>
+        <item name = "co2"> CO2 </item>
+        <item name = "light"> Lighting </item>
+        <item name = "air_h"> Air humidity </item>
+        <item name = "air_t"> air temperature </item>
+        <item name = "soil_h"> Soil moisture </item>
+        <item name = "soil_t"> Soil temperature </item>
     </string-array>
 
     <string-array name="pill">

@@ -10,7 +10,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 描述：View的位置参数
+ * Description: Position parameter of View
  *
  * @author zhangqin
  * @date 2017/4/27

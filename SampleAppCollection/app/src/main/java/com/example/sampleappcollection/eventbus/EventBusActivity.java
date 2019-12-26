@@ -27,7 +27,7 @@ public class EventBusActivity extends AppCompatActivity {
     @BindView(R.id.list)
     ListView mEventbusList;
 
-    private String[] mTitle = new String[]{"入门", "StickyEvent黏性事件"};
+    private String[] mTitle = new String[]{"getting Started", "StickyEvent"};
     private Class[] mClasses = new Class[]{EventBusActivity.class, EventBusStickyActivity.class};
 
     @Override

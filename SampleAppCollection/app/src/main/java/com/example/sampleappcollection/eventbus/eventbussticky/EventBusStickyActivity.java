@@ -17,10 +17,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 通过 postSticky 发送粘性事件，这个事件不会只被消费一次就消失，而是一直存在系统中，
- * 直到被removeStickyEvent 删除掉。那么只要订阅了该粘性事件的所有方法，
- * 只要被register 的时候，就会被检测到，并且执行。
- * 订阅的方法需要添加 sticky = true 属性
+ * Send a sticky event via postSticky, this event will not disappear after only being consumed once, but will always exist in the system
+ * Until deleted by removeStickyEvent. Then as long as all methods of the sticky event are subscribed,
+ * As long as it is registered, it will be detected and executed.
+ * The subscription method needs to add the sticky = true attribute
  *
  * @author zhangqin
  */
@@ -42,11 +42,11 @@ public class EventBusStickyActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mBtnEvent2Send.setOnClickListener(v -> {
-            mString = "EventBus2Activity发出的粘性事件，不删除退出这个activity再进来或者到EventBus1Activity仍然可以看到我";
+            mString = "Sticky events emitted by EventBus2Activity，Exit this activity without deleting or come in or go to EventBus1Activity can still see me";
             EventBus.getDefault().postSticky(mString);
         });
         mBtnEvent2Remove.setOnClickListener(v -> {
-            // 移除全部粘性事件
+            // Remove all sticky events
             EventBus.getDefault().removeAllStickyEvents();
         });
     }
