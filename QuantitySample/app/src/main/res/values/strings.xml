@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QuantitySample</string>
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+</resources>

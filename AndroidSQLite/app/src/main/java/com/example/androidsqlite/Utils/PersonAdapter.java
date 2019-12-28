@@ -59,8 +59,6 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
         notifyItemRemoved(position);
     }
 
-
-
     // Provide a suitable constructor (depends on the kind of dataset)
     public PersonAdapter(List<Person> myDataset, Context context, RecyclerView recyclerView) {
         mPeopleList = myDataset;
@@ -113,6 +111,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
                 builder.setNeutralButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
                         PersonDBHelper dbHelper = new PersonDBHelper(mContext);
                         dbHelper.deletePersonRecord(person.getId(), mContext);
 

@@ -49,27 +49,6 @@ public class AddRecordActivity extends AppCompatActivity {
         String occupation = mOccupationEditText.getText().toString().trim();
         String image = mImageEditText.getText().toString().trim();
         dbHelper = new PersonDBHelper(this);
-
-        if(name.isEmpty()){
-            //error name is empty
-            Toast.makeText(this, "You must enter a name", Toast.LENGTH_SHORT).show();
-        }
-
-        if(age.isEmpty()){
-            //error name is empty
-            Toast.makeText(this, "You must enter an age", Toast.LENGTH_SHORT).show();
-        }
-
-        if(occupation.isEmpty()){
-            //error name is empty
-            Toast.makeText(this, "You must enter an occupation", Toast.LENGTH_SHORT).show();
-        }
-
-        if(image.isEmpty()){
-            //error name is empty
-            Toast.makeText(this, "You must enter an image link", Toast.LENGTH_SHORT).show();
-        }
-
         //create new person
         Person person = new Person(name, age, occupation, image);
         dbHelper.saveNewPerson(person);

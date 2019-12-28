@@ -18,7 +18,7 @@ import java.util.List;
 
 public class PersonDBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "people.db";
+    public static final String DATABASE_NAME = "product.db";
     private static final int DATABASE_VERSION = 3 ;
     public static final String TABLE_NAME = "People";
     public static final String COLUMN_ID = "_id";
@@ -34,6 +34,8 @@ public class PersonDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+
         db.execSQL(" CREATE TABLE " + TABLE_NAME + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_PERSON_NAME + " TEXT NOT NULL, " +
