@@ -38,6 +38,11 @@ public class PartScreenBannerAdapter extends RecyclerView.Adapter<PartScreenBann
         //holder.title.setText(String.valueOf(position));
     }
 
+    @Override
+    public int getItemCount() {
+        return count;
+    }
+
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         final ImageView title;
