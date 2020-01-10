@@ -4,15 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.ArcMotion;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class DialogActivity extends AppCompatActivity {
     private ViewGroup container;
+    private TextView design_your_outfit, our_design;
 
 
     @Override
@@ -21,9 +25,32 @@ public class DialogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dialog);
 
         container = (ViewGroup) findViewById(R.id.container);
+        design_your_outfit = (TextView) findViewById(R.id.design_your_outfit);
+        our_design = (TextView) findViewById(R.id.our_design);
 
         //方式一
         setupSharedEelementTransitions1();
+
+        our_design.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("result", "Message");
+                setResult(Activity.RESULT_OK,returnIntent);
+                finish();
+                dismiss();
+
+            }
+        });
+
+        design_your_outfit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(DialogActivity.this, "Design your outfit", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
         //方式二
         //setupSharedEelementTransitions2();
 
@@ -64,6 +91,18 @@ public class DialogActivity extends AppCompatActivity {
         getWindow().setSharedElementReturnTransition(sharedReturn);
     }
 
+
+
+    @Override
+    public void onBackPressed() {
+        dismiss();
+    }
+
+    public void dismiss() {
+        setResult(Activity.RESULT_CANCELED);
+        finishAfterTransition();
+    }
+
     /**
      * 使用方式二：调用setupSharedEelementTransitions2方法
      * 使用这种方式的话需要的类是 MorphDrawable, MorphTransition
@@ -92,15 +131,5 @@ public class DialogActivity extends AppCompatActivity {
         }
         getWindow().setSharedElementEnterTransition(sharedEnter);
         getWindow().setSharedElementReturnTransition(sharedReturn);
-    }
-
-    @Override
-    public void onBackPressed() {
-        dismiss();
-    }
-
-    public void dismiss() {
-        setResult(Activity.RESULT_CANCELED);
-        finishAfterTransition();
     }
 }

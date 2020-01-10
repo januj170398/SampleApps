@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/TimePickerDialogTheme</item>
+
+    </style>
+
+    <style name="TimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorDate</item> <!-- colorAccent here seems to work just fine? -->
+       <!-- <item name="android:timePickerStyle">@style/TimePickerDialogStyle</item> -->
+
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+    <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+</style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="colorPrimary">@color/colorDate</item>
+        <item name="colorPrimaryDark">@color/colorDate</item>
+        <item name="colorAccent">@color/colorDate</item>
+        <item name="android:headerBackground">@color/colorDate</item>
+        <item name="android:selectedWeekBackgroundColor">@color/colorDate</item>
+        <item name="android:yearListSelectorColor">@color/colorDate</item>
+    </style>
+
+    <style name="TimePickerDialogStyle" parent="@android:style/Widget.Material.Light.TimePicker">
+
+        <item name="android:timePickerMode">clock</item>
+        <item name="android:headerBackground">#ff2d6073</item>
+        <item name="android:numbersTextColor">#ff000000</item>
+        <item name="android:numbersSelectorColor">#ff2d6073</item>
+        <item name="android:numbersBackgroundColor">#ffdddddd</item>
+
+    </style>
+
+</resources>

@@ -7,7 +7,7 @@ android:layout_width="match_parent"
     android:layout_height="match_parent"
 tools:context=".DialogActivity">
 
-<LinearLayout
+<RelativeLayout
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -22,33 +22,52 @@ tools:context=".DialogActivity">
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/icon"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_dress"></ImageView>
 
     <TextView
+        android:id="@+id/design_your_outfit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:text="Design Your Outfit"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/icon_2"
         android:layout_marginTop="10dp"
-        android:text="Demo Dialog"
-        android:textAppearance="?android:textAppearanceLarge"/>
+        android:layout_height="30dp"
+        android:layout_below="@+id/design_your_outfit"
+        android:src="@drawable/ic_action_dress"></ImageView>
 
     <TextView
+        android:id="@+id/our_design"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="This is a demo dialog \nHope you like this demo!"
-        android:textAppearance="?android:textAppearanceMedium"/>
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/design_your_outfit"
+        android:layout_alignLeft="@+id/icon_2"
+        android:text="Our Design"
+        android:textAppearance="?android:textAppearanceLarge" />
 
-    <Button
+    <ImageView
+        android:layout_width="wrap_content"
         android:id="@+id/close"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:background="@drawable/btn_background"
-        android:layout_marginTop="20dp"
-        android:text="Close"
-        android:textColor="#fff"
-        android:textAppearance="?android:textAppearanceMedium"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_height="wrap_content">
+    </ImageView>
 
-</LinearLayout>
+</RelativeLayout>
 
 </FrameLayout>
