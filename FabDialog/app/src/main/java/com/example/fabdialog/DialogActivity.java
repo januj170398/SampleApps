@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 public class DialogActivity extends AppCompatActivity {
     private ViewGroup container;
-    private TextView design_your_outfit, our_design;
 
 
     @Override
@@ -25,13 +24,11 @@ public class DialogActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dialog);
 
         container = (ViewGroup) findViewById(R.id.container);
-        design_your_outfit = (TextView) findViewById(R.id.design_your_outfit);
-        our_design = (TextView) findViewById(R.id.our_design);
 
         //方式一
         setupSharedEelementTransitions1();
 
-        our_design.setOnClickListener(new View.OnClickListener() {
+      /*  our_design.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent returnIntent = new Intent();
@@ -43,13 +40,8 @@ public class DialogActivity extends AppCompatActivity {
             }
         });
 
-        design_your_outfit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(DialogActivity.this, "Design your outfit", Toast.LENGTH_SHORT).show();
+       */
 
-            }
-        });
 
         //方式二
         //setupSharedEelementTransitions2();

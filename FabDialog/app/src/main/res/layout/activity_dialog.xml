@@ -12,9 +12,6 @@ tools:context=".DialogActivity">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="bottom"
-    android:layout_marginBottom="20dp"
-    android:layout_marginEnd="@dimen/dialog_margin"
-    android:layout_marginStart="@dimen/dialog_margin"
     android:background="@drawable/dialog_background"
     android:transitionName="@string/transition_dialog"
     android:elevation="@dimen/dialog_elevation"
@@ -24,40 +21,9 @@ tools:context=".DialogActivity">
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="5dp">
 
-    <ImageView
-        android:layout_width="30dp"
-        android:id="@+id/icon"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_action_dress"></ImageView>
 
-    <TextView
-        android:id="@+id/design_your_outfit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/icon"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="48dp"
-        android:text="Design Your Outfit"
-        android:textAppearance="?android:textAppearanceLarge" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:id="@+id/icon_2"
-        android:layout_marginTop="10dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/design_your_outfit"
-        android:src="@drawable/ic_action_dress"></ImageView>
 
-    <TextView
-        android:id="@+id/our_design"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/design_your_outfit"
-        android:layout_alignLeft="@+id/icon_2"
-        android:text="Our Design"
-        android:textAppearance="?android:textAppearanceLarge" />
 
     <ImageView
         android:layout_width="wrap_content"

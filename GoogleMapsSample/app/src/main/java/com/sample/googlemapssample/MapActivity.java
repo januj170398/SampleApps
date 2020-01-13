@@ -3,6 +3,8 @@ package com.sample.googlemapssample;
 import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 
@@ -26,8 +28,16 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
 
@@ -46,6 +56,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
             mMap.setMyLocationEnabled(true);
             mMap.getUiSettings().setMyLocationButtonEnabled(false);
+
+            init();
         }
 
         Toast.makeText(this, "Map is Ready", Toast.LENGTH_SHORT).show();
@@ -56,6 +68,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private static final String FINE_LOCATION = Manifest.permission.ACCESS_FINE_LOCATION;
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
+
+    // widgets
+    private EditText mSearchText;
+
 
     //vars
     private GoogleMap mMap;
@@ -68,16 +84,77 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_map);
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        mSearchText = (EditText) findViewById(R.id.input_search);
+
 
         getLocationPermission();
+
+                // Add Enter keyboard click
+        mSearchText.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+
+                // If triggered by an enter key, this is the event; otherwise, this is null.
+             /*   if (event != null) {
+                    // if shift key is down, then we want to insert the '\n' char in the TextView;
+                    // otherwise, the default action is to send the message.
+                    if (!event.isShiftPressed()) {
+                        if (isPreparedForSending()) {
+                            confirmSendMessageIfNeeded();
+                        }
+                        return true;
+                    }
+                    return false;
+                }
+
+                if (isPreparedForSending()) {
+                    confirmSendMessageIfNeeded();
+                }
+                return true;
+
+              */
+
+
+
+                if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE
+                        || event.getAction()== KeyEvent.ACTION_DOWN || event.getAction()== KeyEvent.KEYCODE_ENTER){
+
+                    // execute action searches
+                    geoLocate();
+                }
+                return false;
+
+
+            }
+        });
+    }
+
+    private void init(){
+        Log.d(TAG, "init: initialising");
+
+
+    }
+
+    private void geoLocate(){
+        Log.d(TAG, "geoLocate: geolocating");
+
+        String searchString = mSearchText.getText().toString();
+        Geocoder geocoder = new Geocoder(MapActivity.this);
+        List<Address> addressList = new ArrayList<>();
+        try {
+            addressList = geocoder.getFromLocationName(searchString, 1);
+
+        } catch (IOException ex){
+            Log.d(TAG, "geoLocate: " + ex.getMessage());
+        }
+
+        if (addressList.size() > 0){
+            Address address = addressList.get(0);
+
+
+            Toast.makeText(this, address.getAddressLine(0), Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 

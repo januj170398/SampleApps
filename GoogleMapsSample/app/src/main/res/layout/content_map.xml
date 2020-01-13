@@ -15,4 +15,47 @@
         tools:context=".MapsActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:id="@+id/relLayout1"
+        android:background="@drawable/white_border" >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/ic_magnify"
+            android:src="@drawable/ic_action_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+
+            android:imeActionLabel="@+string/send_label"
+
+            android:id="@+id/input_search"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:hint="Enter Address"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
