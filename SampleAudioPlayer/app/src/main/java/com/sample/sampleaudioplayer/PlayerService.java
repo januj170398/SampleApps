@@ -1,19 +1,32 @@
 package com.sample.sampleaudioplayer;
 
+import android.app.Service;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.IBinder;
 import android.util.Log;
 
 import java.io.IOException;
 
-public class Player {
+public class PlayerService extends Service {
 
     MediaPlayer mediaPlayer = new MediaPlayer();
-    public static Player player;
-    String url = "";
 
-    public Player(){
-        this.player = this;
+    public PlayerService() {
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // TODO: Return the communication channel to the service.
+        return null;
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        playStream(intent.getStringExtra("url"));
+
+        return START_NOT_STICKY; // service will only run when it is processing commands
     }
 
     public void playStream (String url){
@@ -34,7 +47,7 @@ public class Player {
             mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
-                   // deleted  mediaPlayer.start();
+                    // deleted  mediaPlayer.start();
                     playPlayer();
                 }
             });

@@ -2,6 +2,7 @@ package com.sample.sampleaudioplayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -25,16 +26,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Player.player.togglePlayer();
+             //   Player.player.togglePlayer();
             }
         });
 
         String url = "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3";
 
-        if (Player.player == null){
-            new Player();
-            Player.player.playStream(url);
-        }
+        Intent i = new Intent(this, PlayerService.class);
+        i.putExtra("url", url);
+        startService(i);
+
+       // if (Player.player == null){
+       //     new Player();
+          //  Player.player.playStream(url);
+       // }
     }
 
     public static void flipPlayPauseButton (boolean isPlaying){
