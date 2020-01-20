@@ -61,16 +61,16 @@ public class MainActivity extends AppCompatActivity {
 
                 if (mServiceBound){
                     mBounderService.togglePlayer();
+                } else {
+                    String url = "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3";
+                    startStreamingService(url);
                 }
 
              //   Player.player.togglePlayer();
             }
         });
 
-        String url = "https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3";
 
-
-        startStreamingService(url);
 
        // if (Player.player == null){
        //     new Player();
